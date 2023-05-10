@@ -4,62 +4,88 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css" />
+
     <title>Portfolio</title>
   </head>
-  <body class="flex min-h-screen flex-col">
-    <header class="bg-black max-h-28 flex-auto text-white uppercase font-bold py-8 md:hidden">
-      <div class="flex items-center justify-between space-x-8">
-        <!--Logo-->
-        <a href="#" class="text-4xl pl-5 font-semibold">LOGO</a>
-        <!--Burger bar-->
-        <div class="block pr-5 group">
-          <div class="space-y-1 cursor-pointer">
-            <div class="bg-white w-9 h-1 rounded group-hover:bg-gray-300 transition"></div>
-            <div class="bg-white w-9 h-1 rounded group-hover:bg-gray-300 transition"></div>
-            <div class="bg-white w-9 h-1 rounded group-hover:bg-gray-300 transition"></div>
+  <body class="flex min-h-screen flex-col h-full w-full font-montserrat">
+    <header class="bg-hed text-white font-bold 1040:hidden h-[63.5px]  shrink-0">
+      
+        <div class="flex justify-between p-5 items-center h-[63.5px]">
+          <!--Logo-->
+          <img src="./src/images/mobile-logo.png" alt="" class="max-w-[110px]">
+          <!--Burger bar-->
+          <div class="block group">
+            <div class="space-y-[6px] cursor-pointer">
+              <div class="bg-white w-[30px] h-[2px] rounded group-hover:bg-gray-300 transition"></div>
+              <div class="bg-white w-[30px] h-[2px] rounded group-hover:bg-gray-300 transition"></div>
+              <div class="bg-white w-[30px] h-[2px] rounded group-hover:bg-gray-300 transition"></div>
+            </div>
+          </div>
+        </div>
+      
+    </header>
+    <main class="bg-mainbg flex flex-col flex-1 1040:flex-row">
+        <div class="min-w-[400px] bg-navbg hidden py-[50px] px-[70px] 1040:flex justify-center z-10 items-center leading-[22.5px]">
+          <div class="items-center justify-center">
+            <div class="items-center justify-center">
+              <div  class="mb-[70px]">
+                <img src="./src/images/logo1.png" alt="" class="cursor-pointer h-[23.23px]">
+              </div>
+              <div class="flex-col">
+                <ul>
+                  <li><a href="#" class="text-link text-[16px] leading-[30px]">Home</a></li>
+                  <li><a href="#" class="text-pr h-[275px] text-[16px] font-medium leading-[30px]">About</a></li>
+                  <li><a href="#" class="text-pr h-[275px] text-[16px] font-medium leading-[30px]">Service</a></li>
+                  <li><a href="#" class="text-pr h-[275px] text-[16px] font-medium leading-[30px]">Portfolio</a></li>
+                  <li><a href="#" class="text-pr h-[275px] text-[16px] font-medium leading-[30px]">News</a></li>
+                  <li><a href="#" class="text-pr h-[275px] text-[16px] font-medium leading-[30px]">Contact</a></li>
+              </div>
+              <div>
+                <div class="mt-[50px] w-[260px] mb-[63px]">
+                  
+                    <div class="py-[10px] border-b-[1px] border-gray-600 flex justify-between">
+                      <input type="text" placeholder="Search" class="bg-navbg border-none focus:outline-none text-white">
+                      <a href="#"><i class="fa-solid fa-magnifying-glass text-gray-600"></i></a> 
+                    </div>
+                  
+                </div>
+              </div>
+              <p class="text-pr font-medium leading-[25px] text-[15px]">
+                © 2022 Tokyo
+                <br>
+                Created by <span class="font-medium cursor-pointer">Marketify</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      <div class="px-5 flex flex-col lg:flex-row lg:justify-center lg:items-center bg-mainbg bg-auto lg:px-10 flex-auto">
+        <div class="p-[10px] my-[50px]">
+          <div class="flex content-start max-h-[660px] items-center">
+            <img src="./src/images/im2.jpg" alt="image" class="rounded-full max-h-[560px] lg:max-h-[297px] lg:min-h-[165.125px] lg:min-w-[165.125px]">
+          </div>
+        </div>
+        <div class="flex flex-col relative lg:pl-[70px] lg:pr-[10px] lg:min-h-[184px]">
+          <div class="mb-5">
+            <h2 class=" text-white font-extrabold text-[40px] leading-[40px] lg:text-[55px] lg:leading-[55px]">ADRIANO SMITH</h2>
+          </div>
+          <div class="mb-5 lg:pr-[100px]">
+            <p class="font-medium leading-[30px] text-[15px] text-pr">I am a WordPress Developer at heart and create features <br class="hidden xl:block"> that are best suited for the job at hand.</p>
+          </div>
+          <div>
+            <ul class="flex">
+              <li class="my-1 w-[17px] h-[17px] leading-[17px] text-[16px] text-base text-white"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+              <li class="my-1 w-[17px] h-[17px] leading-[17px] text-[16px] ml-4 text-base text-white"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+              <li class="my-1 w-[17px] h-[17px] leading-[17px] text-[16px] ml-4 text-base text-white"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+              <li class="my-1 w-[17px] h-[17px] leading-[17px] text-[16px] ml-4 text-base text-white"><a href="#"><i class="fa-solid fa-basketball"></i></a></li>
+              <li class="my-1 w-[17px] h-[17px] leading-[17px] text-[16px] ml-4 text-base text-white"><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+            </ul>
           </div>
         </div>
       </div>
-    </header>
-    <main class="bg-zinc-800 flex-1 flex">
-      <!-- Bar -->
-      <aside class="flex-col pt-14 px-20 items-start hidden md:flex bg-zinc-900">
-        <h3 class="text-gray-200 items-center pr-24 text-4xl font-semibold justify-center tracking-widest"><a href="#">LOGO</a></h3>
-        <ul class="space-y-2 pt-10">
-          <li><a href="#" class=" text-gray-400 hover:text-white hover:underline font-bold tracking-wider transition">Home</a></li>
-          <li><a href="#" class=" text-gray-400 hover:text-white hover:underline font-bold tracking-wider transition">About</a></li>
-          <li><a href="#" class=" text-gray-400 hover:text-white hover:underline font-bold tracking-wider transition">Service</a></li>
-          <li><a href="#" class=" text-gray-400 hover:text-white hover:underline font-bold tracking-wider transition">Portfolio</a></li>
-          <li><a href="#" class=" text-gray-400 hover:text-white hover:underline font-bold tracking-wider transition">News</a></li>
-          <li><a href="#" class=" text-gray-400 hover:text-white hover:underline font-bold tracking-wider transition">Contact</a></li>
-        </ul>
-        <div class="mt-24 flex">
-          <input type="text" placeholder="Search" class="w-52 border-none bg-zinc-900 font-thin tracking-wider focus:outline-none text-white">
-          <a href="#"><i class="fa-solid fa-magnifying-glass text-gray-400 pl-4"></i></a>
-          
-        </div>
-        <hr class="w-60 mt-4 ">
-        <div class="w-60 my-auto">
-          <p class="text-gray-300 tracking-wides"><span class="text-sm">©</span> 2023 ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-      </aside>
-      <!--Main-->
-      <div class="flex flex-col justify-center items-center lg:flex-row sm:border-l border-gray-900 lg:p-20">
-          <img src="./src/images/im2.jpg" alt="image" class="h-52 w-52 rounded-full mt-16">       
-        <div class="text-white my-10 flex flex-col items-center justify-center p-2 sm:pl-20">
-          <h1 class="text-4xl uppercase">Lorem ipsum dolor</h1>
-          <p class="my-8 text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eaque dolorem quis, est aperiam dolorum!</p>
-          <ul class="flex self-start pl-2 space-x-6">
-            <li><a href="#" class="text-gray-400 hover:text-white text-2xl transition"><i class="fa-brands fa-instagram"></i></a></li>
-            <li><a href="#" class="text-gray-400 hover:text-white text-2xl transition"><i class="fa-brands fa-twitter"></i></a></li>
-            <li><a href="#" class="text-gray-400 hover:text-white text-2xl transition"><i class="fa-brands fa-facebook"></i></a></li>
-          </ul>
-        </div>
-      </div>
-    </main>
-
-
     
+    </main>
+    
+
   </body>
   <script type="module" src="/main.js"></script>
 </html>
