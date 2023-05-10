@@ -1,16 +1,6 @@
-import './src/tailwind.css'
+var cursor1 = document.querySelector(".cursor1");
+var cursor2 = document.querySelector(".cursor2");
 
-let innerCursor = document.querySelector(".inner-cursor");
-let outerCursor = document.querySelector(".outer-cursor");
-
-document.addEventListener("mousemove",moveCursor)
-
-function moveCursor(e) {
-    let x = e.clientX;
-    let y = e.clientY;
-
-    innerCursor.style.left = '${x}px';
-    innerCursor.style.top = '${y}px';
-    outerCursor.style.left = '${x}px';
-    outerCursor.style.top = '${y}px';
-}
+document.addEventListener("mousemove",function(e) {
+  cursor1.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+});

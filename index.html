@@ -4,12 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css" />
-
+    <link rel="stylesheet" href="./src/tailwind.css">
     <title>Portfolio</title>
   </head>
   <body class="flex min-h-screen flex-col h-full w-full font-montserrat">
     <header class="bg-hed text-white font-bold 1040:hidden h-[63.5px]  shrink-0">
-      
         <div class="flex justify-between p-5 items-center h-[63.5px]">
           <!--Logo-->
           <img src="./src/images/mobile-logo.png" alt="" class="max-w-[110px]">
@@ -24,8 +23,10 @@
         </div>
       
     </header>
+    <!--Main-->
     <main class="bg-mainbg flex flex-col flex-1 1040:flex-row">
-        <div class="min-w-[400px] bg-navbg hidden py-[50px] px-[70px] 1040:flex justify-center z-10 items-center leading-[22.5px]">
+        <!--Bar-->
+        <div class="min-w-[400px] bg-navbg hidden py-[50px] px-[70px] 1040:flex justify-center items-center leading-[22.5px]">
           <div class="items-center justify-center">
             <div class="items-center justify-center">
               <div  class="mb-[70px]">
@@ -58,7 +59,8 @@
             </div>
           </div>
         </div>
-      <div class="px-5 flex flex-col lg:flex-row lg:justify-center lg:items-center bg-mainbg bg-auto lg:px-10 flex-auto">
+      <!--Main Section-->
+      <section class="px-[10px] flex flex-col lg:flex-row lg:justify-center lg:items-center bg-mainbg bg-auto lg:px-10 flex-auto">
         <div class="p-[10px] my-[50px]">
           <div class="flex content-start max-h-[660px] items-center">
             <img src="./src/images/im2.jpg" alt="image" class="rounded-full max-h-[560px] lg:max-h-[297px] lg:min-h-[165.125px] lg:min-w-[165.125px]">
@@ -66,10 +68,10 @@
         </div>
         <div class="flex flex-col relative lg:pl-[70px] lg:pr-[10px] lg:min-h-[184px]">
           <div class="mb-5">
-            <h2 class=" text-white font-extrabold text-[40px] leading-[40px] lg:text-[55px] lg:leading-[55px]">ADRIANO SMITH</h2>
+            <h2 class=" text-white font-extrabold text-[35px] leading-[35px] lg:text-[55px] lg:leading-[55px]">ADRIANO SMITH</h2>
           </div>
           <div class="mb-5 lg:pr-[100px]">
-            <p class="font-medium leading-[30px] text-[15px] text-pr">I am a WordPress Developer at heart and create features <br class="hidden xl:block"> that are best suited for the job at hand.</p>
+            <p class="font-medium leading-[30px] text-[15px] text-pr">I am a WordPress Developer at heart and create features that are best suited for the job at hand.</p>
           </div>
           <div>
             <ul class="flex">
@@ -81,11 +83,12 @@
             </ul>
           </div>
         </div>
-      </div>
+      </section>
     
     </main>
     
-
+    <div class="cursor1"></div>
+    <div class="cursor2"></div>
   </body>
-  <script type="module" src="/main.js"></script>
+  <script src="/main.js"></script>
 </html>
